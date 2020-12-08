@@ -1,0 +1,29 @@
+{
+  "0x19742Defea3dAe3e87c4404E4aEF51313F46Fb16": {
+    "twitter": {
+      "timestamp": 1607132536246,
+      "tweetID": "1335036670547288064",
+      "handle": "usoundifferent"
+    }
+  },
+  "0x74Aa01d162E6dC6A657caC857418C403D48E2D77": {
+    "twitter": {
+      "timestamp": 1607466731125,
+      "tweetID": "1336437068826861571",
+      "handle": "testcryptotestt"
+    }
+  },
+  "0xbbf3f1421D886E9b2c5D716B5192aC998af2012c": {
+    "other": {
+      "name": "cUNI - Compound Multisig",
+      "contentURL": "https://www.comp.xyz/t/community-multisig-4-of-6-deployment/134"
+    }
+  },
+  "0xF45fc3edAb5060168A650A3b854E4a7290740B49": {
+    "twitter": {
+      "timestamp": 1607466992265,
+      "tweetID": "1336439295259914249",
+      "handle": "testcryptotestt"
+    }
+  }
+}

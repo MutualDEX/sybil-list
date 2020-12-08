@@ -11,7 +11,7 @@ Read the Sybil announcement post : [link to post]()
 
 Sybil is a tool that connects wallet addresses to digital identities. Users sign messages with their Ethereum keys, and post signatures on their social profiles. Verifiers can then check these signatures and verify truthful address -> profile mappings. 
 
-These verified mappings can be used by any project that wants to connect social identities to Ethereum addresses.
+These verified mappings are public and open for anyone to use. 
  
 One use case for Sybil is governance systems on Ethereum. Delegates and voters in these systems benefit from seeing real-world identities attached to Ethereum addresses. A interface for governance that incorporates Sybil can be used here [https://sybil-interface.vercel.app/#/delegates/uniswap](https://sybil-interface.vercel.app/#/delegates/uniswap). 
 
@@ -30,6 +30,16 @@ A twitter entry for an Ethereum address includes 3 fields of data :
 #### Consuming the list 
  
 The raw JSON can be found at [https://raw.githubusercontent.com/Uniswap/sybil-list/main/verified.json](https://raw.githubusercontent.com/Uniswap/sybil-list/main/verified.json).
+
+To use, just fetch the data at this endpoint: 
+
+```typescript
+fetch('https://raw.githubusercontent.com/Uniswap/sybil-list/main/verified.json').then(async res => {
+  res.json().then(data => {
+      console.log(data) // list data 
+  })
+})
+```
  
 ## Verifying an Identity 
 Sybil uses a 3 step process for linking an Ethereum address to a social identity. 

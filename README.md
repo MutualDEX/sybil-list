@@ -2,7 +2,7 @@
 This repo contains a list of verified mappings that link Ethereum addresses with Twitter handles. 
 
 - JSON List: [verified.json](./verified.json)
-- Sybil interface for governance: [https://sybil-interface.vercel.app/#/delegates/uniswap](https://sybil-interface.vercel.app/#/delegates/uniswap)
+- Sybil interface for governance: [https://sybil.org](https://sybil-interface.vercel.app/#/delegates/uniswap)
 - Interface repo: [https://github.com/Uniswap/sybil-interface](https://github.com/Uniswap/sybil-interface)
 - Verifier repo: [https://github.com/Uniswap/sybil-verifier-worker](https://github.com/Uniswap/sybil-verifier-worker)
  
@@ -13,7 +13,7 @@ Sybil is a tool that connects wallet addresses to digital identities. Users sign
 
 These verified mappings are public and open for anyone to use. 
  
-One use case for Sybil is governance systems on Ethereum. Delegates and voters in these systems benefit from seeing real-world identities attached to Ethereum addresses. A interface for governance that incorporates Sybil can be used here [https://sybil-interface.vercel.app/#/delegates/uniswap](https://sybil-interface.vercel.app/#/delegates/uniswap). 
+One use case for Sybil is governance systems on Ethereum. Delegates and voters in these systems benefit from seeing real-world identities attached to Ethereum addresses. A interface for governance that incorporates Sybil can be used here [https://sybil.org](https://sybil.org). 
 
 ## Use the Sybil list   
  
@@ -107,7 +107,7 @@ const signer = recoverTypedSignature_v4({
  
 ## Hosted Verifier
  
-Verifier repo: [https://github.com/ianlapham/sybil-worker](https://github.com/ianlapham/sybil-worker) 
+Verifier repo: [https://github.com/Uniswap/sybil-verifier-worker](https://github.com/Uniswap/sybil-verifier-worker) 
  
 Users who verify their identities through the [Sybil Interface](https://github.com/Uniswap/sybil-interface) submit data to a cloudflare worker that runs a verification script. If the content in the tweet meets requirements and valid signer is recovered, the signer <-> mapping is added to [verified.json](./verified.json) in a new commit. 
  
